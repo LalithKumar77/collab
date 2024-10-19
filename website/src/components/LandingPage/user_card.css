@@ -1,0 +1,7 @@
+.user_card{
+    margin: 10px;
+    height: 90%;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 20px;
+}
