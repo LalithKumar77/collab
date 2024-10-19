@@ -1,43 +1,55 @@
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.lp_main{
+
+.lp_main {
     height: 100vh;
 }
-.lp_head{
+
+.lp_head {
     padding-top: 30px;
     display: flex;
     width: 100%;
 }
-.lp_logo{
+
+.lp_logo {
     padding: 20px;
 }
-.lp_options{
+
+.lp_options {
     position: absolute;
     right: 10%;
     padding: 20px;
 }
-.lp_options ul{
+
+.lp_options ul {
     display: flex;
     list-style: none;
 }
-.lp_options li{
+
+.lp_options li {
     padding-left: 25px;
     color: white;
 }
-.lp_options li:hover{
+
+.lp_options li:hover {
     scale: 1.1;
     transition: 0.4s;
     font-weight: bold;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.lp_body{
+
+.lp_body {
     justify-content: center;
     text-align: center;
     height: 91vh;
 }
+
 .lp_body video {
     position: absolute;
     top: 50%;
@@ -48,49 +60,84 @@ a{
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-.lp_title{
+
+.lp_title {
     position: relative;
     top: 40%;
     margin-left: 10%;
     width: 80vw;
 }
-.lp_title h1{
+
+.lp_title h1 {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 15px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.lp_title h5{
+
+.lp_title h5 {
     font-size: 18px;
     color: #13bacc;
     font-weight: 400;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-.lp_user_dash{
+
+.lp_user_dash {
+    margin: 0;
     padding: 50px;
     padding-top: 100px;
-    height: 80vh;
-    color: #ffffff;
-    background-color: rgba(21, 21, 85, 0.61);
+    height: 1-0vh;
+    background: linear-gradient(135deg, #070f2b, #13bacc);
     border-radius: 20px;
     justify-content: center;
     text-align: center;
-}
-.lp_user_dash h1{
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    font-weight: 700;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.lp_cards{
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 10vh;
-    height: 70%;
-    background-color: silver;
-    border-radius: 20px;
-    display: flex;
+    color: white;
     overflow: hidden;
+}
+
+.lp_user_dash h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.lp_cards {
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+}
+
+.lp_card_all {
+    display: flex;
+    align-items: center;
+    animation: moveCard 20s linear infinite;
+    width: calc(100% * 2);
+}
+
+.lp_cards:hover .lp_card_all{
+    animation-play-state: paused;
+}
+
+.lp_user_card {
+    display: inline-block;
+    height: 80%;
+    width: 100%; 
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.lp_user_card:hover {
+    transform: scale(1.05);
+}
+
+@keyframes moveCard {
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(-110%); 
+    }
 }
