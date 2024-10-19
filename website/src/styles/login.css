@@ -1,0 +1,201 @@
+/* Login and Register container styles */
+.log, .reg {
+  width: 100%;
+  max-width: 450px; /* Slightly wider for a more spacious feel */
+  margin: 20px auto;
+  padding: 40px; /* Increased padding */
+  background-color: #ffffff; /* White background for form */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  border-radius: 15px; /* More rounded corners */
+  text-align: center;
+  animation: fadeIn 0.6s ease-in, bounceIn 0.8s; /* Multiple animations */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px); /* Slide in from above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bounce-in animation */
+@keyframes bounceIn {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 32px; /* Increased font size */
+  color: #001f3f; /* Dark navy color for headings */
+  font-weight: bold; /* Bold for emphasis */
+  animation: fadeIn 0.6s ease-in; /* Heading fade-in */
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styles */
+label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 18px; /* Slightly larger font size */
+  color: #555;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px; /* Increased padding for comfort */
+  margin-bottom: 20px; /* Increased margin for spacing */
+  border: 1px solid #ccc;
+  border-radius: 8px; /* More rounded corners */
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for transform */
+  background-color: #f9f9f9; /* Light grey background */
+}
+
+/* Focus styles for inputs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+  outline: none;
+  transform: scale(1.02); /* Slightly increase input size on focus */
+}
+
+/* Button styles */
+button {
+  padding: 12px 20px; /* Increased padding for comfort */
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  font-size: 18px; /* Larger font size */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+  position: relative; /* Position for pseudo-elements */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px) scale(1.05); /* Slight lift and grow effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Button active effect */
+button:active {
+  background-color: #004494; /* Even darker shade when active */
+  transform: scale(0.98); /* Slight shrink effect */
+}
+
+/* Add spacing around form elements */
+div {
+  margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+/* Toast container styles */
+.Toastify__toast-container {
+  top: 50px; /* Adjust the position */
+}
+
+/* Success toast styles */
+.Toastify__toast--success {
+  background-color: #28a745; /* Green background for success */
+  color: white; /* White text color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Error toast styles */
+.Toastify__toast--error {
+  background-color: #dc3545; /* Red background for error */
+  color: white; /* White text color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Toast message styles */
+.Toastify__toast {
+  font-size: 16px; /* Font size */
+  padding: 15px; /* Padding for a spacious feel */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+/* Icon styles */
+.Toastify__toast-icon {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+/* Toast animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.Toastify__toast--slide-enter {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.Toastify__toast--slide-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.Toastify__toast--slide-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.Toastify__toast--slide-exit-active {
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* Hover and focus styles for links */
+a {
+  color: #007bff; /* Primary color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Transition effect */
+}
+
+a:hover {
+  color: #0056b3; /* Darker shade on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Additional styles for interactions */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  background-color: #eef; /* Light blue background on hover */
+}
