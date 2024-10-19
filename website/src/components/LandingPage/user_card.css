@@ -1,7 +1,91 @@
-.user_card{
-    margin: 10px;
-    height: 90%;
+.user_card {
+    margin: 20px;
+    height: auto;
     width: 300px;
-    background-color: aqua;
-    border-radius: 20px;
+    min-width: 300px;
+    background-color: #ffffff; /* White background for a clean look */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center text for a uniform look */
+}
+
+.user_card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.uc_top {
+    height: 180px;
+    background-color: #f5f5f5; /* Light background to highlight the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uc_top img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular profile image */
+    border: 5px solid #fff; /* White border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow around the image */
+}
+
+.uc_content {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif; /* Clean modern font */
+    color: #333; /* Dark text color for readability */
+}
+
+.uc_content h1 {
+    font-size: 22px;
+    font-weight: 600; /* Bold the name for emphasis */
+    margin-bottom: 5px; /* Reduced space for a tighter layout */
+}
+
+.uc_content h3 {
+    font-size: 14px; /* Slightly smaller font size for description */
+    font-weight: 400;
+    color: #777; /* Subtle color for the description */
+}
+
+.uc_button {
+    margin: 10px 0;
+    padding: 10px 20px; /* Add some padding for the button */
+    background-color: #FF6F61; /* Consistent theme color */
+    color: #fff; /* White text for contrast */
+    border: none;
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.uc_button:hover {
+    background-color: #e05453; /* Darker shade on hover */
+}
+
+.uc_contact {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uc_contact a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.uc_contact a:hover {
+    color: #FF6F61; /* Consistent hover color */
+}
+
+/* Optional: Add smooth transition effects to icons */
+.uc_contact a:hover .icon {
+    transform: scale(1.2);
 }

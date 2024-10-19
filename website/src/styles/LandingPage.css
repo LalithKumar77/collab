@@ -1,31 +1,31 @@
 *{
     margin: 0;
 }
-.hp_main{
+.lp_main{
     height: 100vh;
 }
-.hp_head{
+.lp_head{
     padding-top: 30px;
     display: flex;
     width: 100%;
 }
-.hp_logo{
+.lp_logo{
     padding: 20px;
 }
-.hp_options{
+.lp_options{
     position: absolute;
     right: 10%;
     padding: 20px;
 }
-.hp_options ul{
+.lp_options ul{
     display: flex;
     list-style: none;
 }
-.hp_options li{
+.lp_options li{
     padding-left: 25px;
     color: white;
 }
-.hp_options li:hover{
+.lp_options li:hover{
     scale: 1.1;
     transition: 0.4s;
     font-weight: bold;
@@ -33,12 +33,12 @@
 a{
     text-decoration: none;
 }
-.hp_body{
+.lp_body{
     justify-content: center;
     text-align: center;
     height: 91vh;
 }
-.hp_body video {
+.lp_body video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -48,32 +48,49 @@ a{
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-.hp_title{
+.lp_title{
     position: relative;
     top: 40%;
     margin-left: 10%;
     width: 80vw;
 }
-.hp_title h1{
-    color: silver;
+.lp_title h1{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.hp_title h5{
-    color: rgb(60, 168, 218);
+.lp_title h5{
+    font-size: 18px;
+    color: #13bacc;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-.hp_user_dash{
+.lp_user_dash{
     padding: 50px;
     padding-top: 100px;
     height: 80vh;
-    background-color: silver;
+    color: #ffffff;
+    background-color: rgba(21, 21, 85, 0.61);
+    border-radius: 20px;
     justify-content: center;
     text-align: center;
 }
-.hp_cards{
+.lp_user_dash h1{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.lp_cards{
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 10vh;
     height: 70%;
-    background-color: red;
+    background-color: silver;
     border-radius: 20px;
     display: flex;
+    overflow: hidden;
 }
