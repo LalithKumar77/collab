@@ -36,7 +36,7 @@ function HomePage() {
                         <div className="lp_card_all">
                             {/* First set of user cards */}
                             <div className="lp_user_card">
-                                <UserCard name="Dhanush" des="I raised an issue with a popular app, and within a week, they responded and fixed it!" im={pic1} />
+                                <UserCard name="Dhanush" des="hii everyone" im={pic1} />
                             </div>
                             <div className="lp_user_card">
                                 <UserCard name="Lalith" des="I raised an issue with a popular app, and within a week, they responded and fixed it!" />
@@ -60,7 +60,7 @@ function HomePage() {
                         {/* Duplicate the card set for seamless scrolling effect */}
                         <div className="lp_card_all">
                             <div className="lp_user_card">
-                                <UserCard name="Lalith" des="I raised an issue with a popular app, and within a week, they responded and fixed it!" im={pic1} />
+                                <UserCard name="Dhanush" des="I raised an issue with a popular app, and within a week, they responded and fixed it!" im={pic1} />
                             </div>
                             <div className="lp_user_card">
                                 <UserCard name="Lalith" des="I raised an issue with a popular app, and within a week, they responded and fixed it!" />
