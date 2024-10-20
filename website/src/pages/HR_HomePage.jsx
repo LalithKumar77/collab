@@ -11,15 +11,17 @@ function HRHomepage(){
                         <li>Home</li>
                         <li>Search</li>
                         <li>Message</li>
+                        <li>Notificaction</li>
                     </ul>
                     <ul id="lower">
-                        <li>Notificaction</li>
                         <li>Account</li>
                         <li>Setting</li>
                     </ul>
                 </div>     
             </div>
-            <div className="hr_h_center"></div>
+            <div className="hr_h_center">
+                
+            </div>
             <div className="hr_h_right"></div>
         </div>
     );
