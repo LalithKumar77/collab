@@ -1,27 +1,46 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
+import axios from "axios";
 
 function Forgot() {
     const [email, setEmail] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // Simulate an API call for password reset
+
         if (email) {
-            // Replace with your actual API call
-            await Swal.fire({
-                title: 'Success!',
-                text: 'Password reset link sent to your email!',
-                icon: 'success',
-                confirmButtonColor: '#007bff',
-                background: '#f9f9f9',
-                color: '#333',
-                customClass: {
-                    title: 'swal-title',
-                    content: 'swal-content',
-                },
-            });
-            setEmail('');
+            try {
+                const response = await axios.post('http://localhost:5000/forgotPassword', { email });
+                
+                if (response.status === 200) {
+                    await Swal.fire({
+                        title: 'Success!',
+                        text: 'Password reset link sent to your email!',
+                        icon: 'success',
+                        confirmButtonColor: '#007bff',
+                        background: '#f9f9f9',
+                        color: '#333',
+                        customClass: {
+                            title: 'swal-title',
+                            content: 'swal-content',
+                        },
+                    });
+                    setEmail('');
+                }
+            } catch (error) {
+                await Swal.fire({
+                    title: 'Error!',
+                    text: error.response ? error.response.data.message : 'An error occurred. Please try again.',
+                    icon: 'error',
+                    confirmButtonColor: '#dc3545',
+                    background: '#f9f9f9',
+                    color: '#333',
+                    customClass: {
+                        title: 'swal-title',
+                        content: 'swal-content',
+                    },
+                });
+            }
         } else {
             await Swal.fire({
                 title: 'Error!',
