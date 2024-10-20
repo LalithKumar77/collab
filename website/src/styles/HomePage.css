@@ -2,11 +2,25 @@
     display: flex;
     justify-content: space-between;
     height: 100vh;
+    padding: 10px;
 }
-.mid_header{
-   margin:4%;
-   padding: 6%; 
+
+.left_header {
+    margin: 8px 5px;
+    padding: 10px 15px;
+    height: 67px;
+    width: auto;
+    background-color: white;
 }
+
+.mid_header {
+    margin: 8px 5px;
+    padding: 10px 15px;
+    height: 67px;
+    width: auto;
+    background-color: white;
+}
+
 .hm_container1 {
     flex: 1;
     background-color: lightcoral;
@@ -17,11 +31,10 @@
 .hm_container2 {
     flex: 4;
     background-color: lightblue;
-    padding: 20px;
+    padding: 15px;
     margin: 5px;
-    overflow:scroll;
+    overflow-y: auto;
     scrollbar-width: none;
-
 }
 
 .hm_container3 {
