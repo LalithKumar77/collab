@@ -4,7 +4,7 @@ import video from "../assets/LandingPage/background_animation.mp4";
 import UserCard from "../components/LandingPage/user_card";
 import pic1 from "../assets/LandingPage/me1.jpg";
 
-function HomePage() {
+function LandingPage() {
     return (
         <div className="lp">
             <div className="lp_main">
@@ -13,7 +13,7 @@ function HomePage() {
                     <div className="lp_options">
                         <ul>
                             <Link to="/"><li>Home</li></Link>
-                            <Link to="/contact-us"><li>Contact Us</li></Link>
+                            <Link to="/hr-homepage"><li>Contact Us</li></Link>
                             <Link to="/login"><li>Register</li></Link>
                             <Link to="/register"><li>Login</li></Link>
                         </ul>
@@ -86,4 +86,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default LandingPage;
