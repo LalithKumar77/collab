@@ -20,9 +20,11 @@ function HRHomepage(){
                 </div>     
             </div>
             <div className="hr_h_center">
-                
+
             </div>
-            <div className="hr_h_right"></div>
+            <div className="hr_h_right">
+                <div className=""></div>
+            </div>
         </div>
     );
 }
