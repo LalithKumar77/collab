@@ -1,25 +1,26 @@
-.Homepage_front{
+.HomePage_front {
     display: flex;
-    height: 95vh;
+    justify-content: space-between;
+    height: 100vh;
 }
+
 .hm_container1 {
     flex: 1;
-    background-color: lightblue;
+    background-color: lightcoral;
     padding: 20px;
-    text-align: center;
+    margin: 5px;
 }
 
 .hm_container2 {
-    flex: 3;
-    background-color: lightgreen;
+    flex: 4;
+    background-color: lightblue;
     padding: 20px;
-    text-align: center;
-    height:100px ;
+    margin: 5px;
 }
 
 .hm_container3 {
     flex: 2;
-    background-color: lightcoral;
+    background-color: lightgreen;
     padding: 20px;
-    text-align: center;
+    margin: 5px;
 }

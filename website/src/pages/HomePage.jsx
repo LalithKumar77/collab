@@ -1,12 +1,12 @@
 import "../styles/HomePage.css";
 function HomePage(){
     return (
-        <div ClassName="HomePage_front">
-            <div ClassName="hm_container1">
+        <div className="HomePage_front">
+            <div className="hm_container1">
             </div>
-            <div ClassName="hm_container2" >
+            <div className="hm_container2" >
             </div>
-            <div ClassName="hm_container3" >
+            <div className="hm_container3" >
             </div>
         </div>
     );
