@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 const bcrypt = require('bcryptjs');
-
+const nodemailer = require('nodemailer');
 // Function to generate JWT token
 const generateToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '30d' });
@@ -49,4 +49,41 @@ exports.loginUser = async (req, res) => {
     console.error("Login error:", error); 
     res.status(500).json({ message: 'Server error, please try again later.' });
   }
+};
+
+exports.forgotPass = async (req, res) => {
+    const { email } = req.body;
+
+    try {
+        const user = await User.findOne({ email });
+        if (!user) {
+            return res.status(404).json({ message: 'Email not found' });
+        }
+
+        const resetToken = generateToken(user._id); 
+
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            port:465,
+            secure: true,
+            auth: {
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS,
+            }
+        });
+
+        const mailOptions = {
+            from: process.env.EMAIL_USER,
+            to: email,
+            subject: 'Password Reset Request',
+            text: `You requested a password reset. Click the link below to reset your password: link `,
+        };
+
+        await transporter.sendMail(mailOptions);
+        res.status(200).json({ message: 'Password reset link sent to your email' });
+
+    } catch (error) {
+        console.error("Email error:", error);
+        res.status(500).json({ message: 'Server error, please try again' });
+    }
 };
