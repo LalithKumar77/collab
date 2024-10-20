@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/login';
 import Register from './pages/register';
 import Forgot from './pages/forgotpassword';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
