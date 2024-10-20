@@ -1,24 +1,32 @@
-import "./PostCard.css"
+import "./PostCard.css";
+
 function PostCard(props) {
   return (
     <div className="hm_card">
       <div className="hm_post">
+        <div className="hm_post-header">
+          <h1 className="hm_cardtitle">{props.titl}</h1>
+        </div>
         <div className="hm_post-content">
-          <p className="hm_post-header">
-            <h1 className="hm_cardtitle">{props.titl}</h1>
-          </p>
-          <p className="hm_post-text">
-            {props.text}
-           </p>
-          <div className="hm_user">
+          <span className="card_text_content" >{props.text}</span>
+        </div>
+        <div className="hm_user">
+          <div className="hm_author-image-container">
             <img
               src={props.image}
-               alt={`User ${props.name}`}
+              alt={`User ${props.name}`}
               className="hm_author-image"
             />
-            <div className="hm_card_author-content">
-              <p className="hm_card_author-name">{props.User_name}</p>
-              <p className="hm_card_date">{props.hm_post_date}</p>
+          </div>
+          <div className="hm_card_author-content">
+            <div className="hm_card_author-name">
+              <span className="card_text_content">{props.User_name}</span>
+            </div>
+            <div className="hm_card_userid">
+              <span className="card_text_content">@{props.User_id}</span> 
+            </div>
+            <div className="hm_card_date">
+              <span className="card_text_content">{props.hm_post_date}</span>
             </div>
           </div>
         </div>
@@ -27,5 +35,4 @@ function PostCard(props) {
   );
 }
 
-
-export default PostCard
+export default PostCard;
