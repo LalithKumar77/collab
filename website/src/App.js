@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/login';
-import register from './pages/register';
+import Register from './pages/register';
 import Forgot from './pages/forgotpassword';
 import LandingPage from './pages/LandingPage';
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<register />} />
+        <Route path="/register" element={<Register />} />
         <Route path='/forgotPassword' element={<Forgot />} />
       </Routes>
     </Router>

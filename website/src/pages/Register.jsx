@@ -23,8 +23,6 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Check if passwords match
     if (formData.password !== formData.confirmPassword) {
       Swal.fire({
         icon: 'error',
@@ -75,11 +73,11 @@ function Register() {
         color: '#fff', // White text
         confirmButtonColor: '#ff512f', // Button color
         confirmButtonText: 'Try Again', // Custom button text
-        iconColor: '#fff', // White icon color
+        iconColor: '#fff', 
         customClass: {
-          popup: 'styled-popup', // Add custom classes if needed
+          popup: 'styled-popup',
         },
-        backdrop: `rgba(0, 0, 0, 0.7)` // Darker backdrop
+        backdrop: `rgba(0, 0, 0, 0.7)`
       });
     }
   };
