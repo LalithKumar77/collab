@@ -14,8 +14,8 @@ function HomePage() {
                         <ul>
                             <Link to="/"><li>Home</li></Link>
                             <Link to="/contact-us"><li>Contact Us</li></Link>
-                            <Link to="/login"><li>Register</li></Link>
-                            <Link to="/register"><li>Login</li></Link>
+                            <Link to="/login"><li>Login</li></Link>
+                            <Link to="/register"><li>Register</li></Link>
                         </ul>
                     </div>
                 </div>

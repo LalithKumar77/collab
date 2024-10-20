@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import CSS for Toastify
-import "../styles/login.css";
+import Swal from 'sweetalert2';
+import "../styles/login.css"; // Ensure this contains styles that match the Register component
+import { Link } from 'react-router-dom';
 
-function Register() {
+function Login() {
   // State to handle form inputs
   const [formData, setFormData] = useState({
-    username: "",
     email: "",
     password: ""
   });
@@ -24,30 +23,50 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/register', formData);
-      console.log("Registration response:", response.data);
-      toast.success("Registration successful!"); 
-      setFormData({ username: "", email: "", password: "" }); // Clear form
+      const response = await axios.post('http://localhost:5000/login', formData);
+      console.log("Login response:", response.data);
+
+      // On successful login
+      Swal.fire({
+        icon: 'success',
+        title: 'Login Successful!',
+        text: 'Welcome back!',
+        background: 'linear-gradient(145deg, #43e97b, #38f9d7)', // Gradient background
+        color: '#fff', // White text
+        confirmButtonColor: '#43e97b', // Button color
+        confirmButtonText: 'Great!', // Custom button text
+        iconColor: '#fff', // White icon color
+        customClass: {
+          popup: 'styled-popup', // Add custom classes if needed
+        },
+        backdrop: `rgba(0, 0, 0, 0.7)` // Darker backdrop
+      });
+
+      // Handle successful login (e.g., redirect to dashboard)
+      // Example: window.location.href = '/dashboard';
     } catch (error) {
-      console.error("Error registering:", error.response.data);
-      toast.error(error.response.data.message || "Error occurred during registration."); // Show error toast
+      console.error("Error logging in:", error.response.data);
+      Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: error.response.data.message || "Error occurred during login.",
+        background: 'linear-gradient(145deg, #ff512f, #dd2476)', // Gradient background
+        color: '#fff', // White text
+        confirmButtonColor: '#ff512f', // Button color
+        confirmButtonText: 'Try Again', // Custom button text
+        iconColor: '#fff', // White icon color
+        customClass: {
+          popup: 'styled-popup', // Add custom classes if needed
+        },
+        backdrop: `rgba(0, 0, 0, 0.7)` // Darker backdrop
+      });
     }
   };
 
   return (
-    <div className="reg">
-      <h2>Register</h2>
+    <div className="log">
+      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Username:</label>
-          <input
-            type="text"
-            name="username"
-            value={formData.username}
-            onChange={handleChange}
-            required
-          />
-        </div>
         <div>
           <label>Email:</label>
           <input
@@ -68,11 +87,12 @@ function Register() {
             required
           />
         </div>
-        <button type="submit">Register</button>
+        <p className="fp"><Link to="/forgotPassword">Forgot Password </Link></p>
+        <button type="submit">Login</button>
+        <p className="rg">Don't have an account? <Link to="/register">Register</Link></p> {/* Link to Register page */}
       </form>
-      <ToastContainer /> {/* Add ToastContainer to render toasts */}
     </div>
   );
 }
 
-export default Register;
+export default Login;
