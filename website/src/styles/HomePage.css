@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-.HomePage_front{
-    display: flex;
-    height: 100vh;
-    background-color: white;
-=======
 .HomePage_front {
     display: flex;
     justify-content: space-between;
@@ -11,18 +5,12 @@
 }
 .mid_header{
     
->>>>>>> 44b28389e81db4b7b796bc537d64294456ec4c60
 }
 .hm_container1 {
     flex: 1;
     background-color: lightcoral;
     padding: 20px;
-<<<<<<< HEAD
-    text-align: center;
-    height: 300px;
-=======
     margin: 5px;
->>>>>>> 44b28389e81db4b7b796bc537d64294456ec4c60
 }
 
 .hm_container2 {

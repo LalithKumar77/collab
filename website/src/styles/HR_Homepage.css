@@ -1,31 +1,64 @@
-.hr_home{
+.hr_home {
     display: flex;
     height: 95vh;
 }
-.hr_h_left{
+
+.hr_h_left {
     background-color: aliceblue;
     height: 100vh;
     width: 20%;
 }
-.hr_h_center{
-    background: linear-gradient(60deg, #fbfbfb,blue);
+
+.hr_h_center {
+    background: linear-gradient(60deg, #fbfbfb, blue);
     height: 100vh;
     width: 50%;
 }
-.hr_h_right{
+
+.hr_h_right {
     background-color: blue;
     height: 100vh;
     width: 30%;
+    justify-content: center;
+    text-align: center;
 }
-.hr_h_options{
+
+.hr_h_options {
     margin-top: 150px;
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 1.5vw; /* Adjusted font size for better responsiveness */
 }
-.hr_h_options li{
+
+.hr_h_options li {
     margin-top: 20px;
+    list-style: none;
 }
-.hr_h_options #lower{
-    position:absolute;
-    bottom: 5%;   
-};
+
+.hr_h_options #lower {
+    position: absolute;
+    bottom: 5%;
+}
+
+.hr_h_profile {
+    margin: 30px;
+    margin-left: 15%;
+    height: 50%;
+    background: linear-gradient(130deg,green,yellow);
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px 0px black;
+    align-content: center;
+    text-align: center;
+    font-size: 1vw; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 300px;
+}
+.hr_h_profile:hover{
+    box-shadow: 10px 10px 20px 0px black;
+    transform: translateY(-5px);
+    transition:0.3s ease;
+}
+
+.hr_h_profile img {
+    height: 9vw;
+    border-radius: 50%;
+}
