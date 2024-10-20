@@ -2,5 +2,13 @@
     margin: 4px 0px;
     padding: 12px;
     width: auto;
+    display: flex;
 }
-
+.op_icon{
+    padding: 2px;
+    margin: 2px;
+}
+.op_text{
+    padding: 2px;
+    margin: 2px;
+}

@@ -2,6 +2,8 @@ import React from "react";
 import PostCard from "../components/HomePage/PostCard";
 import "../styles/HomePage.css";
 import pic1 from "../assets/HomePage/chandu.jpg";
+import HmOption from "../components/HomePage/HmOption";
+import {IoMdHome} from "react-icons/io";
 
 function HomePage() {
     // Sample data for posts
@@ -47,12 +49,38 @@ function HomePage() {
             User_id: "john_doe",
             hm_post_date: "October 20, 2024"
         }
-    ];
 
+    ];
+    const HmOptions = [
+        {
+            icon: <IoMdHome/>,
+            op_name: "Home"
+        }, {
+            icon: <IoMdHome/>,
+            op_name: "Home"
+        }, {
+            icon: <IoMdHome/>,
+            op_name: "Home"
+        }, {
+            icon: <IoMdHome/>,
+            op_name: "Home"
+        },
+        {
+          icon: <IoMdHome/>,
+          op_name: "Home"
+      },{
+        icon: <IoMdHome/>,
+        op_name: "Home"
+    }
+    ];
     return (
         <div className="HomePage_front">
             <div className="hm_container1">
                 <div className="left_header"></div>
+                {
+                  HmOptions.map((New_op,inde)=>(<HmOption key={inde}
+                  icon={New_op.icon} op_name={New_op.op_name}/>))
+                }
 
             </div>
             <div className="hm_container1_2">

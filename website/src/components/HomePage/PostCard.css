@@ -1,122 +1,133 @@
-
 .hm_card {
-    width: auto;
-    background: linear-gradient( 90deg, rgba(255, 255, 255, 1) 0%, rgba(242, 245, 248, 1) 35%, rgba(236, 236, 237, 1) 100% );
-    box-shadow: 0 13px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    margin: 30px auto;
-    transition: background-color 0.5s, box-shadow 0.5s, margin-left 0.5s;
+  width: auto;
+  background: linear-gradient(90deg, #F0F8FF, #E0FFFF); /* Gradient from Alice Blue to Lightcyan */
+  box-shadow: 0 13px 15px rgba(70, 130, 180, 0.3); /* Shadow using Steel Blue */
+  border-radius: 10px;
+  margin: 30px auto;
+  transition: background-color 0.5s, box-shadow 0.5s, margin-left 0.5s;
 }
+
 .hm_card:hover {
-    scale: 1.02;
-    background-color: #ffffff;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.8s, box-shadow 0.8s;
+  scale: 1.01;
+  background-color: #F0F8FF; /* Keeping it Alice Blue */
+  box-shadow: 0 30px 30px rgba(70, 130, 180, 0.3); /* Shadow using Steel Blue */
+  transition: background-color 0.8s, box-shadow 0.8s;
 }
 
 .hm_post {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hm_post-header {
-    text-align: center;
-    margin: 10px 0;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .hm_cardtitle {
-    font-size: 28px;
-    font-family: 'Roboto', sans-serif;
-    color: #3B3C3F;
-    margin: 0;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  color: #4682B4; /* Steel Blue for the title */
+  margin: 0;
 }
 
 .hm_post-content {
-    flex: 1;
+  flex: 1;
 }
 
 .hm_post-text {
-    font-size: 15px;
-    color: #768CA4;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 10px;
+  font-size: 15px;
+  color: #4682B4; /* Steel Blue for text */
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
 }
 
 .hm_user {
-    display: flex;
-    align-items: center;
-    background-color: #F2F5F8;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #F0F8FF; /* Keeping it Alice Blue */
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .hm_author-image-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .hm_author-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 10px;
 }
 
 .hm_card_author-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.hm_card_author-name {
-    font-size: 20px;
-    color: #3B3C3F;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    margin: 0;
+.hm_card_author_name {
+  font-size: 20px;
+  color: #4682B4; /* Steel Blue for the author name */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin: 0;
 }
 
 .hm_card_date {
-    font-size: 13px;
-    font-family: 'Roboto', sans-serif;
-    color: #768CA4;
-    margin-top: 5px;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  color: #4682B4; /* Steel Blue for the date */
+  margin-top: 5px;
 }
 
 .hm_card_userid {
-    font-size: 15px;
-    color: #768CA4;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 5px;
+  font-size: 15px;
+  color: #4682B4; /* Steel Blue for the user ID */
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5px;
 }
 
 .hm_button-container {
-    display: flex;
-
-    margin-top: 10px;
-    flex-direction: row;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
 }
 
 .hm_discuss-button,
 .hm_downvote-button,
 .hm_upvote-button {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    background-color: #E9ECEF;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
-    transition: background-color 0.3s;
-    margin: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #66CDAA; /* Medium Turquoise for buttons */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Added shadow transition */
+  margin: 10px;
+  color: #FFFFFF; /* White for button text */
 }
+
 .hm_discuss-button:hover,
 .hm_downvote-button:hover,
 .hm_upvote-button:hover {
-    background-color: #D0D7DD;
+  background-color: #57B89A; /* Slightly darker shade for hover effect */
+  box-shadow: 0 6px 15px rgba(70, 130, 180, 0.3); /* Updated shadow color on hover */
 }
 
 .hm_icon {
-    margin-right: 5px;
+  margin-right: 5px;
+}
+
+.hm_container1_2 {
+  flex: 6;
+  display: flex;
+  flex-direction: row; /* To allow the internal containers to stack vertically */
+  height: 100%; /* Full height of the parent */
+  overflow-y: auto; /* Enable scrolling */
+  background: linear-gradient(90deg, #E0FFFF, #F0F8FF); /* Gradient from Lightcyan to Alice Blue */
 }

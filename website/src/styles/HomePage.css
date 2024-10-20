@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     height: 100vh;
-    padding: 10px;
+    padding: 0px;
 }
 
 .left_header {
@@ -10,7 +10,9 @@
     padding: 10px 15px;
     height: 67px;
     width: auto;
-    background-color: white;
+    background-color: white; /* Keeping it white */
+    border: 2px solid #2BE3AF; /* Adding border */
+    box-shadow: 0 4px 10px rgba(43, 227, 175, 0.2); /* Adding shadow */
 }
 
 .mid_header {
@@ -18,35 +20,38 @@
     padding: 10px 15px;
     height: 67px;
     width: auto;
-    background-color: white;
+    background-color: white; /* Keeping it white */
+    border: 2px solid #2BE3AF; /* Adding border */
+    box-shadow: 0 4px 10px rgba(43, 227, 175, 0.2); /* Adding shadow */
 }
 
 .hm_container1 {
     flex: 1;
-    background-color: lightcoral;
-    padding: 20px;
-    margin: 5px;
+    background: linear-gradient(to bottom, white, #2BE3AF); /* Gradient from white to accent color */
 }
+
 .hm_container1_2 {
     flex: 6;
     display: flex;
     flex-direction: row; /* To allow the internal containers to stack vertically */
     height: 100%; /* Full height of the parent */
     overflow-y: auto; /* Enable scrolling */
+    background: linear-gradient(120deg, white, #2BE3AF); /* Gradient from white to the accent color */
+    border: 2px solid #2BE3AF; /* Adding border */
+    box-shadow: 0 4px 10px rgba(43, 227, 175, 0.2); /* Adding shadow */
 }
 
 .hm_container2 {
     flex: 4;
-    background-color: lightblue;
+    background-color: auto; /* Keeping it white */
     padding: 15px;
-    margin: 5px;
     height: 100vh;
+    
 }
 
 .hm_container3 {
     flex: 2;
-    background-color: lightgreen;
-    padding: 20px;
-    margin: 5px;
+    background-color: auto;
+    /* Updated to white for consistency */
     height: auto;
 }
