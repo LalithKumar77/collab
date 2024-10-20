@@ -12,10 +12,17 @@ function LandingPage() {
                     <div className="lp_logo"><img alt="logo" src=""></img></div>
                     <div className="lp_options">
                         <ul>
+<<<<<<< HEAD
                             <Link to="/HomePage"><li>Home</li></Link>
                             <Link to="/hr-homepage"><li>Contact Us</li></Link>
                             <Link to="/login"><li>Register</li></Link>
                             <Link to="/register"><li>Login</li></Link>
+=======
+                            <Link to="/"><li>Home</li></Link>
+                            <Link to="/contact-us"><li>Contact Us</li></Link>
+                            <Link to="/login"><li>Login</li></Link>
+                            <Link to="/register"><li>Register</li></Link>
+>>>>>>> e6ab594cb28997d771115de70fc303e412dcb05c
                         </ul>
                     </div>
                 </div>

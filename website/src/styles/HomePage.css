@@ -4,7 +4,8 @@
     height: 100vh;
 }
 .mid_header{
-    
+   margin:4%;
+   padding: 6%; 
 }
 .hm_container1 {
     flex: 1;
@@ -18,6 +19,9 @@
     background-color: lightblue;
     padding: 20px;
     margin: 5px;
+    overflow:scroll;
+    scrollbar-width: none;
+
 }
 
 .hm_container3 {
