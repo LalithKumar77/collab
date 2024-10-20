@@ -7,7 +7,7 @@ body {
   }
   
   .hm_card {
-    width: 525px;
+    width: auto;
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(242,245,248,1) 35%, rgba(236,236,237,1) 100%);
     box-shadow: 0 13px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -24,7 +24,8 @@ body {
   
   .hm_post-content {
     padding: 15px;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .hm_post-header {

@@ -19,8 +19,9 @@
     background-color: lightblue;
     padding: 20px;
     margin: 5px;
-    display:flex;
-    flex-wrap: wrap;
+    overflow:scroll;
+    scrollbar-width: none;
+
 }
 
 .hm_container3 {
