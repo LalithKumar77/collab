@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/login';
-import Register from './pages/register';
+import Register from './pages/Register';
 import Forgot from './pages/forgotpassword';
 import LandingPage from './pages/LandingPage';
+import HRHomepage from './pages/HR_HomePage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path='/contact' element={<HRHomepage />} />
         <Route path='/forgotPassword' element={<Forgot />} />
       </Routes>
     </Router>

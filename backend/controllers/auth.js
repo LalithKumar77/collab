@@ -19,10 +19,9 @@ exports.registerUser = async (req, res) => {
 
     const user = await User.create({ username, email, password });
 
-    // Send response without token in registration
     res.status(201).json({ message: "Registration successful" });
   } catch (error) {
-    console.error("Registration error:", error); // Log the error for debugging
+    console.error("Registration error:", error); 
     res.status(500).json({ message: 'Server error, please try again later.' });
   }
 };
@@ -40,14 +39,14 @@ exports.loginUser = async (req, res) => {
         _id: user._id,
         username: user.username,
         email: user.email,
-        token, // Send token to client
+        token, 
         message: "Login successful",
       });
     } else {
       res.status(401).json({ message: 'Invalid credentials' });
     }
   } catch (error) {
-    console.error("Login error:", error); // Log the error for debugging
+    console.error("Login error:", error); 
     res.status(500).json({ message: 'Server error, please try again later.' });
   }
 };
