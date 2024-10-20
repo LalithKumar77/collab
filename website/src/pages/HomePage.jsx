@@ -1,4 +1,4 @@
-import "website/src/styles/HomePage.css"
+import "../styles/HomePage.css";
 function HomePage(){
     return (
         <div ClassName="HomePage_front">
