@@ -1,5 +1,5 @@
 import "./post.css"
-function PostCard() {
+function PostCard(props) {
   return (
     <div className="hm_card">
       <div className="hm_post">
