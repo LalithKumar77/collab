@@ -3,7 +3,9 @@
     justify-content: space-between;
     height: 100vh;
 }
-
+.mid_header{
+    
+}
 .hm_container1 {
     flex: 1;
     background-color: lightcoral;
