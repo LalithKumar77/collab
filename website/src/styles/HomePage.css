@@ -1,5 +1,6 @@
-.Homepade_front{
+.Homepage_front{
     display: flex;
+    height: 95vh;
 }
 .hm_container1 {
     flex: 1;
@@ -13,6 +14,7 @@
     background-color: lightgreen;
     padding: 20px;
     text-align: center;
+    height:100px ;
 }
 
 .hm_container3 {
