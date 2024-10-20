@@ -1,102 +1,122 @@
 
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .hm_card {
-  width: auto;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(242, 245, 248, 1) 35%,
-    rgba(236, 236, 237, 1) 100%
-  );
-  box-shadow: 0 13px 15px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  margin: 30px auto;
-  transition: background-color 0.5s, box-shadow 0.5s, margin-left 0.5s;
+    width: auto;
+    background: linear-gradient( 90deg, rgba(255, 255, 255, 1) 0%, rgba(242, 245, 248, 1) 35%, rgba(236, 236, 237, 1) 100% );
+    box-shadow: 0 13px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 30px auto;
+    transition: background-color 0.5s, box-shadow 0.5s, margin-left 0.5s;
 }
-
 .hm_card:hover {
-  scale: 1.02;
-  background-color: #ffffff;
-  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.8s, box-shadow 0.8s;
+    scale: 1.02;
+    background-color: #ffffff;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.8s, box-shadow 0.8s;
 }
 
 .hm_post {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hm_post-header {
-  text-align: center;
-  margin: 10px 0;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .hm_cardtitle {
-  font-size: 28px;
-  font-family: 'Roboto', sans-serif;
-  color: #3B3C3F;
-  margin: 0;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: #3B3C3F;
+    margin: 0;
 }
 
 .hm_post-content {
-  flex: 1;
+    flex: 1;
 }
 
 .hm_post-text {
-  font-size: 15px;
-  color: #768CA4;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 10px;
+    font-size: 15px;
+    color: #768CA4;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
 }
 
 .hm_user {
-  display: flex;
-  align-items: center;
-  background-color: #F2F5F8;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #F2F5F8;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .hm_author-image-container {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .hm_author-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
 }
 
 .hm_card_author-content {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .hm_card_author-name {
-  font-size: 20px;
-  color: #3B3C3F;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  margin: 0;
+    font-size: 20px;
+    color: #3B3C3F;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
 }
 
 .hm_card_date {
-  font-size: 13px;
-  font-family: 'Roboto', sans-serif;
-  color: #768CA4;
-  margin-top: 5px;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: #768CA4;
+    margin-top: 5px;
 }
+
 .hm_card_userid {
-  font-size: 15px;
-  color: #768CA4; 
-  font-family: 'Roboto', sans-serif;
-  margin-top: 5px; 
+    font-size: 15px;
+    color: #768CA4;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+}
+
+.hm_button-container {
+    display: flex;
+
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.hm_discuss-button,
+.hm_downvote-button,
+.hm_upvote-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #E9ECEF;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+.hm_discuss-button:hover,
+.hm_downvote-button:hover,
+.hm_upvote-button:hover {
+    background-color: #D0D7DD;
+}
+
+.hm_icon {
+    margin-right: 5px;
 }
