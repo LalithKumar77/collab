@@ -1,8 +1,9 @@
-import "website/src/styles/HomePage.css"
+import "../styles/HomePage.css";
+
 function HomePage(){
     return (
         <div ClassName="HomePage_front">
-            <div ClassName="hm_container1">
+            <div ClassName="hm_container1">hi
             </div>
             <div ClassName="hm_container2" >
             </div>

@@ -1,11 +1,14 @@
-.Homepade_front{
+.HomePage_front{
     display: flex;
+    height: 100vh;
+    background-color: white;
 }
 .hm_container1 {
     flex: 1;
     background-color: lightblue;
     padding: 20px;
     text-align: center;
+    height: 300px;
 }
 
 .hm_container2 {
