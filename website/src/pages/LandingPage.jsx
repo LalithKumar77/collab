@@ -12,8 +12,8 @@ function LandingPage() {
                     <div className="lp_logo"><img alt="logo" src=""></img></div>
                     <div className="lp_options">
                         <ul>
-                            <Link to="/"><li>Home</li></Link>
-                            <Link to="/contact-us"><li>Contact Us</li></Link>
+                            <Link to="/homepage"><li>Home</li></Link>
+                            <Link to="/contact"><li>Contact Us</li></Link>
                             <Link to="/login"><li>Login</li></Link>
                             <Link to="/register"><li>Register</li></Link>
                         </ul>
