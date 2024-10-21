@@ -24,22 +24,14 @@ const userSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  resetPasswordToken: {
+    type: String,
+  },  
+  resetPasswordExpire: {
+    type: Date,
+  },
+
 });
-
-// hashing password using bcrypt
-userSchema.pre('save', async function (next) {
-  if (!this.isModified('password')) return next();
-
-  const hash = await bcrypt.genSalt(10);
-  this.password = await bcrypt.hash(this.password, hash);
-  next();
-});
-
-
-userSchema.methods.matchPassword = async function (enteredPassword) {
-  return await bcrypt.compare(enteredPassword, this.password);
-};
-
 const User = mongoose.model('User', userSchema);
 
 module.exports = User;

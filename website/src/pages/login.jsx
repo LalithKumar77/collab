@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Swal from 'sweetalert2';
-import "../styles/login.css"; // Ensure this contains styles that match the Register component
+import "../styles/login.css";
 import { Link } from 'react-router-dom';
 
 function Login() {
