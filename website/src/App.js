@@ -5,7 +5,8 @@ import Register from './pages/Register';
 import Forgot from './pages/forgotpassword';
 import LandingPage from './pages/LandingPage';
 import HRHomepage from './pages/HR_HomePage';
-import Homepage from "./pages/HomePage"
+import Homepage from "./pages/HomePage";
+import Reset from './pages/resetpassword';
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/homepage" element={<Homepage />} />
         <Route path='/contact' element={<HRHomepage />} />
         <Route path='/forgotPassword' element={<Forgot />} />
+        <Route path='/forgotPassword/reset/:token' element={<Reset />} />
       </Routes>
     </Router>
   );
